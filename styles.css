@@ -1,0 +1,227 @@
+/* General reset and styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Navigation styling */
+header nav {
+    background-color: #0066cc;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styling */
+footer {
+    background-color: #0066cc; /* Footer background color */
+    color: white; /* Text color */
+    padding: 1rem 0; /* Padding for the footer */
+    text-align: center; /* Centered text */
+    margin-top: 2rem; /* Space above the footer */
+}
+
+.footer-content {
+    max-width: 800px; /* Same max-width as the main sections */
+    margin: 0 auto; /* Center the footer content */
+}
+
+.footer-links {
+    margin-top: 0.5rem; /* Space above the links */
+}
+
+.footer-links a {
+    color: white; /* Link color */
+    text-decoration: none; /* No underline */
+    margin: 0 1rem; /* Space between links */
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Main content styling */
+main {
+    padding: 2rem;
+}
+
+.welcome-section {
+    margin-bottom: 2rem; /* Space between welcome and features */
+}
+
+section {
+    background: white;
+    border-radius: 12px; /* More rounded corners for a cute look */
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 800px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+}
+
+/* Heading styling */
+h1 {
+    color: #0066cc;
+    margin-bottom: 1rem;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun font for heading */
+}
+
+h2 {
+    color: #0957ff; /* Cute color for subheadings */
+    margin-bottom: 1rem;
+}
+
+/* Info section styling */
+.info-section {
+    margin-top: 2rem; /* Space above the info section */
+}
+
+.info-section ul {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0; /* Align the list */
+}
+
+.info-section li {
+    background-color: #f1f8ff; /* Light background for list items */
+    border: 2px solid #0066cc; /* Border for cute effect */
+    border-radius: 8px; /* Rounded corners */
+    padding: 1rem;
+    margin-bottom: 1rem;
+    transition: transform 0.2s; /* Animation on hover */
+}
+
+.info-section li:hover {
+    transform: scale(1.02); /* Slightly grow on hover */
+}
+
+.info-section strong {
+    color: #0066cc; /* Highlighted text color */
+}
+
+/* Troubleshooting steps styling */
+ol {
+    list-style: decimal inside;
+    margin-top: 1rem;
+}
+
+ol li {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-left: 4px solid #0066cc;
+    background-color: #f1f8ff;
+    border-radius: 5px;
+}
+
+ol li b {
+    color: #0066cc;
+}
+
+/* Sublist styling */
+ol li ul {
+    margin-top: 0.5rem;
+    margin-left: 1.5rem;
+    padding: 0.5rem;
+    background-color: #e8f0fe;
+    border-radius: 5px;
+}
+
+/* Form container styling for contact page */
+.contact-section {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 600px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Form styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+button, input[type="submit"] {
+    display: block;
+    width: 100%;
+    background-color: #ff6f61; /* Cute button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #e55a50; /* Darker shade on hover */
+}
+
+/* SVG styling */
+svg {
+    display: block;
+    margin: 2rem auto;
+    max-width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    section {
+        margin: 20px;
+        padding: 20px;
+    }
+    
+    .contact-section {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
